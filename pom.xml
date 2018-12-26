@@ -98,6 +98,14 @@
 			<artifactId>spring-beans</artifactId>
 			<version>5.0.8.RELEASE</version>
 		</dependency>
+
+		<!-- 工具类 -->
+		<dependency>
+			<groupId>com.xiaoleilu</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+
 		<!-- 引用模块监控与管理依赖包 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
