@@ -5,5 +5,7 @@ package com.example.springbootdemo.singleton;
  */
 public class Singleton {
     private Singleton(){};
-    private void dosomething(){};
+    private void dosomething(){
+        //业务逻辑
+    };
 }
