@@ -4,7 +4,6 @@ import java.lang.reflect.Constructor;
 
 /**
  * 单例模式工厂类
- *
  */
 public class SingleFactory {
     private static Singleton singleton;
