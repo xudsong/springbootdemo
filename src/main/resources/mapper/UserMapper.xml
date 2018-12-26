@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.springbootdemo.mapper.UserMapper">
+    <!--
+         id:sql语句唯一标识
+         parameterType：指定传入参数类型
+         resultType：返回结果集类型
+         #{}占位符：起到占位作用，如果传入的是基本类型，那么#{}中的变量名可以随意写
+     -->
+    <select id="findUserById" parameterType="int" resultType="User">
+        select * from user_db where id=#{id}
+    </select>
+</mapper>
