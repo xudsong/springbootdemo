@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 @Mapper  //用了＠Mapper注解,Spring启动时会自动扫描该接口，这样就可以在需要使用时直接注入 Mapper 了
 public interface UserMapper {
 
-    User findUserById(Integer id);
+    User findUserById(String id);
 
 }
