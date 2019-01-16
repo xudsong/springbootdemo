@@ -26,7 +26,7 @@ public class HelloController {
     }
 
     @ApiOperation(value = "登录", notes = "根据用户id查询用户信息")
-    @ApiImplicitParam(name = "id",value = "用户id",required = true, dataType = "String",paramType = "path")
+    @ApiImplicitParam(name = "id",value = "用户id",required = true, dataType = "String",paramType = "path",defaultValue = "1")
     @RequestMapping(value = "/login/{id}",method = RequestMethod.GET)
     private String login(@PathVariable(value = "id") String id){
         User user = userMapper.findUserById(id);

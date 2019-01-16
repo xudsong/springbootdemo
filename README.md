@@ -2,4 +2,6 @@
 mybatis自动生成  
 springboot  
 Swagger2 API在线文档  
-redis
+redis  
+Quartz定时任务  
+
