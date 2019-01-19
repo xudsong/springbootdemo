@@ -8,22 +8,22 @@ import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTShd;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTTblWidth;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.STShd;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.STTblWidth;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class DocCreateService {
 
+    @Value("${doc.path}")
+    private String path;
+
     public void creatDoc(List<Table> list) throws Exception{
         XWPFDocument document = new XWPFDocument();
-        String path = "D:\\create_table.docx";
         File file = new File(path);
         FileOutputStream out = new FileOutputStream(file);
 
