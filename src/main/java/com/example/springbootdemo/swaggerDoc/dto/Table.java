@@ -1,6 +1,8 @@
 package com.example.springbootdemo.swaggerDoc.dto;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
@@ -58,4 +60,92 @@ public class Table {
      * 返回参数
      */
     private String responseParam;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getRequestForm() {
+        return requestForm;
+    }
+
+    public void setRequestForm(String requestForm) {
+        this.requestForm = requestForm;
+    }
+
+    public String getResponseForm() {
+        return responseForm;
+    }
+
+    public void setResponseForm(String responseForm) {
+        this.responseForm = responseForm;
+    }
+
+    public String getRequestType() {
+        return requestType;
+    }
+
+    public void setRequestType(String requestType) {
+        this.requestType = requestType;
+    }
+
+    public List<Request> getRequestList() {
+        return requestList;
+    }
+
+    public void setRequestList(List<Request> requestList) {
+        this.requestList = requestList;
+    }
+
+    public List<Response> getResponseList() {
+        return responseList;
+    }
+
+    public void setResponseList(List<Response> responseList) {
+        this.responseList = responseList;
+    }
+
+    public String getRequestParam() {
+        return requestParam;
+    }
+
+    public void setRequestParam(String requestParam) {
+        this.requestParam = requestParam;
+    }
+
+    public String getResponseParam() {
+        return responseParam;
+    }
+
+    public void setResponseParam(String responseParam) {
+        this.responseParam = responseParam;
+    }
 }

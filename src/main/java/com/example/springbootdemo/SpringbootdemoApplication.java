@@ -11,8 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration;
 
 @SpringBootApplication   //开启了Spring的组件扫描和Spring Boot的自动配置功能
-@EnableAutoConfiguration(exclude = { FreeMarkerAutoConfiguration.class })
-@MapperScan("com.example.springbootdemo.mapper")
+//@EnableAutoConfiguration(exclude = { FreeMarkerAutoConfiguration.class })
+//@MapperScan("com.example.springbootdemo.mapper")
 public class SpringbootdemoApplication implements CommandLineRunner{
 
 	//@Autowired
